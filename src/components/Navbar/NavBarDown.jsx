@@ -8,7 +8,7 @@ function NavBarDown({ isFixed }) {
       style={
         isFixed
           ? { position: 'fixed', top: 0, width: '100%', zIndex: 1000, paddingBlock: '1rem' }
-          : { position: 'static', paddingBlock: '2rem' }
+          : { position: 'static', paddingBlock: '1.8rem' }
       }
     >
       <div className="container">
