@@ -130,3 +130,51 @@
   }
 }
 /* BreadCrumbs - End */
+
+/* Banner Section */
+.banner-section {
+  margin-block: 2rem;
+}
+
+.banner-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "bannerRight bannerLeft";
+}
+
+.banner-right,
+.banner-right-text,
+.banner-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner-right {
+  grid-area: bannerRight;
+  animation: slideDown 1s ease-out forwards;
+  gap: 2rem;
+  h1 {
+    padding-bottom: 2rem;
+  }
+}
+
+.banner-left {
+  grid-area: bannerLeft;
+}
+
+
+
+/* Animation */
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
