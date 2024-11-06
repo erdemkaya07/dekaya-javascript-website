@@ -38,6 +38,7 @@
   gap: 2rem;
 }
 
+
 .navbar-up .navbar-contact-detail {
   justify-content: space-between;
 }
@@ -74,7 +75,7 @@
 }
 
 
-
+.navbar-down-links,
 .navbar-down-links .main-menu,
 .navbar-down .container {
   display: flex;
@@ -98,4 +99,12 @@
 
 .navbar-down-logo img {
   width: 60%;
+}
+
+.menu-btn {
+  display: none;
+  font-size: 2rem;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
 }

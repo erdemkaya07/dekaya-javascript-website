@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import DekayaLogo from '../../assets/images/dekaya-logo.png';
 
 function NavBarDown({ isFixed }) {
+
+  const [isOpen, setIsOpen] = useState(false); 
+  const mobileMenu = () => {
+    setIsOpen((isOpen) => !isOpen)
+  }
+
+
   return (
     <div
       className="navbar-down"
@@ -22,7 +29,7 @@ function NavBarDown({ isFixed }) {
           </a>
         </div>
         <div className="navbar-down-links">
-          <ul id="main-menu" className="main-menu" aria-label="main menu">
+          <ul id="main-menu" className={`main-menu ${isOpen ? "is-open" : ""}`} aria-label="main menu">
             <li className="nav-item" aria-label="main menu links">
               <a href="#" className="nav-link">Anasayfa</a>
             </li>
@@ -39,6 +46,9 @@ function NavBarDown({ isFixed }) {
               <a href="#" className="nav-link">İletişim</a>
             </li>
           </ul>
+          <button class="menu-btn" aria-label="menu button for mobile" onClick={mobileMenu}>
+            <i class="fa-solid fa-bars menu-btn-icon"></i>
+          </button>
         </div>
       </div>
     </div>

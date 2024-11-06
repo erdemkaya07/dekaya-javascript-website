@@ -30,3 +30,72 @@
     }
   }
 }
+
+/* Responsive for tablet */
+@media (min-width: 768px) and (max-width: 1399px) {
+  .socialMedia {
+    display: none;
+  }
+  .contactInfoList {
+    gap: 0.9rem !important;
+  }
+  .menu-btn {
+    display: block !important;
+  }
+  .main-menu {
+    display: none !important;
+  }
+  .main-menu.is-open {
+    display: flex !important;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    flex-direction: column;
+    box-shadow: var(--box-shadow);
+    padding: 3rem;
+    background-color: var(--bg-white);
+    border-radius: 0.7rem;
+    z-index: 9999;
+
+  }
+  .navbar-down-links .main-menu { 
+    font-size: 1.5rem;
+  }
+ }
+
+
+
+/* Responsive for mobile */
+@media (max-width: 767px) {
+  .socialMedia {
+    display: none;
+  }
+  .contactInfoList {
+    display: flex;
+    flex-direction: column;
+    align-items: start !important;
+    gap: 0.4rem !important;
+  }
+  .menu-btn {
+    display: block !important;
+  }
+  .main-menu {
+    display: none !important;
+  }
+  .main-menu.is-open {
+    display: flex !important;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    flex-direction: column;
+    box-shadow: var(--box-shadow);
+    padding: 3rem;
+    background-color: var(--bg-white);
+    border-radius: 0.7rem;
+    z-index: 9999;
+
+  }
+  .navbar-down-links .main-menu { 
+    font-size: 1.5rem;
+  }
+}
