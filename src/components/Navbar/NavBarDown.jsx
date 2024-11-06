@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import DekayaLogo from '../../assets/images/dekaya-logo.png';
+import { Link, NavLink } from 'react-router-dom';
 
 function NavBarDown({ isFixed }) {
 
@@ -20,34 +21,34 @@ function NavBarDown({ isFixed }) {
     >
       <div className="container">
         <div className="navbar-down-logo">
-          <a href="#">
+          <Link to="/">
             <img
               className="main-nav-logo"
               src={DekayaLogo}
               alt="De-Kaya logo"
             />
-          </a>
+          </Link>
         </div>
         <div className="navbar-down-links">
           <ul id="main-menu" className={`main-menu ${isOpen ? "is-open" : ""}`} aria-label="main menu">
             <li className="nav-item" aria-label="main menu links">
-              <a href="#" className="nav-link">Anasayfa</a>
+              <NavLink to="/" className="nav-link">Anasayfa</NavLink>
             </li>
             <li className="nav-item" aria-label="main menu links">
-              <a href="#" className="nav-link">Hakkımızda</a>
+              <NavLink to="/hakkimizda" className="nav-link">Hakkımızda</NavLink>
             </li>
             <li className="nav-item" aria-label="main menu links">
-              <a href="#" className="nav-link">Hizmetlerimiz</a>
+              <NavLink to="/hizmetlerimiz" className="nav-link">Hizmetlerimiz</NavLink>
             </li>
             <li className="nav-item" aria-label="main menu links">
-              <a href="#" className="nav-link">Referanslar</a>
+              <NavLink to="/referanslar" className="nav-link">Referanslar</NavLink>
             </li>
             <li className="nav-item" aria-label="main menu links">
-              <a href="#" className="nav-link">İletişim</a>
+              <NavLink to="/iletisim" className="nav-link">İletişim</NavLink>
             </li>
           </ul>
-          <button class="menu-btn" aria-label="menu button for mobile" onClick={mobileMenu}>
-            <i class="fa-solid fa-bars menu-btn-icon"></i>
+          <button className="menu-btn" aria-label="menu button for mobile" onClick={mobileMenu}>
+            <i className="fa-solid fa-bars menu-btn-icon"></i>
           </button>
         </div>
       </div>

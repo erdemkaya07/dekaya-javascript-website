@@ -10,7 +10,7 @@ function NavBarUp( {className} ) {
               <li aria-label="phone number">
                 <i className="fa-solid fa-phone-volume pr-0"></i><span>Telefon: 0542 533 5292</span></li>
               <li aria-label="E-mail">
-                <i className="fa-solid fa-envelope-open-text pr-0"></i><span>E-posta:ekrem.kaya@de-kaya.com</span></li>
+                <i className="fa-solid fa-envelope-open-text pr-0"></i><span>E-posta: ekrem.kaya@de-kaya.com</span></li>
               <li aria-label="Working time">
                 <i className="fa-solid fa-clock pr-0"></i><span>Çalışma Saatleri: 08:00 - 22:00</span></li>
             </ul>

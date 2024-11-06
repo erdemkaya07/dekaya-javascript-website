@@ -108,3 +108,25 @@
   border: 0;
   cursor: pointer;
 }
+
+/* BreadCrumbs - Start */
+.crumb a {
+  color: var(--primary-color) !important;
+}
+
+.breadcrumb-section {
+  background-color: var(--gray-100);
+  padding-block: 1rem;
+}
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+  background-color: var(--gray-100);
+  color: var(--gray-600);
+  .crevrons-right {
+    font-size: 0.6rem;
+  }
+}
+/* BreadCrumbs - End */
