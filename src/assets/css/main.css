@@ -1,0 +1,82 @@
+:root {
+  background-color: white;
+  --primary-color: #007FFF;
+  --success-color: #22c55e;
+  --system-error: #EF4444;
+  --gray-900: #0b0f19;
+  --gray-800: #33354d;
+  --gray-700: #565973;
+  --gray-600: #9397ad;
+  --gray-500: #b4b7c9;
+  --gray-400: #d4d7e5;
+  --gray-300: #e2e5f1;
+  --gray-200: #eff2fc;
+  --gray-100: #f3f6ff;
+  --bg-white: #fff;
+  --transiton-hover: 0.5s ease-in-out;
+  --box-shadow: 0 5px 5px #00000028;
+}
+
+
+/* NavBar UP - Start */
+.navbar-up {
+  padding-block: 1.5rem;
+  background-color: var(--gray-900);
+  color: var(--gray-100);
+  transition: transform 0.3s ease;
+}
+
+.navbar-up.hidden {
+  transform: translateY(-100%);
+}
+
+.navbar-up .navbar-contact-detail ,
+.contactInfoList,
+.social-media-icon {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar-up .navbar-contact-detail {
+  justify-content: space-between;
+}
+
+.contactInfoList i {
+  padding-right: 1rem;
+  color: var(--primary-color);
+}
+
+.social-media-icon i {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+}
+
+/* NavBar Up - End */
+
+/* NavBar Down - Start*/
+
+.navbar-down {
+  background-color: var(--bg-white);
+  box-shadow: var(--box-shadow);
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+
+
+.navbar-down-links .main-menu,
+.navbar-down .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.navbar-down-links .main-menu {
+  gap: 2rem;
+}
+
+.navbar-down-logo img {
+  width: 70%;
+}

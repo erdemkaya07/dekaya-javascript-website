@@ -1,0 +1,48 @@
+import React from 'react';
+import DekayaLogo from '../../assets/images/dekaya-logo.png';
+
+function NavBarDown({ isFixed }) {
+  return (
+    <div
+      className="navbar-down"
+      style={
+        isFixed
+          ? { position: 'fixed', top: 0, width: '100%', zIndex: 1000, paddingBlock: '1rem' }
+          : { position: 'static', paddingBlock: '2rem' }
+      }
+    >
+      <div className="container">
+        <div className="navbar-down-logo">
+          <a href="#">
+            <img
+              className="main-nav-logo"
+              src={DekayaLogo}
+              alt="De-Kaya logo"
+            />
+          </a>
+        </div>
+        <div className="navbar-down-links">
+          <ul id="main-menu" className="main-menu" aria-label="main menu">
+            <li className="nav-item" aria-label="main menu links">
+              <a href="#" className="nav-link">Anasayfa</a>
+            </li>
+            <li className="nav-item" aria-label="main menu links">
+              <a href="#" className="nav-link">Hakkımızda</a>
+            </li>
+            <li className="nav-item" aria-label="main menu links">
+              <a href="#" className="nav-link">Hizmetlerimiz</a>
+            </li>
+            <li className="nav-item" aria-label="main menu links">
+              <a href="#" className="nav-link">Referanslar</a>
+            </li>
+            <li className="nav-item" aria-label="main menu links">
+              <a href="#" className="nav-link">İletişim</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default NavBarDown;
