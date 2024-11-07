@@ -69,6 +69,10 @@
     gap: 2rem;
   }
 
+  .services {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
 }
 
 /* Responsive for mobile */
@@ -110,5 +114,9 @@
       "bannerRight"
       "bannerLeft" !important;
     gap: 2rem;
+  }
+
+  .services {
+    grid-template-columns: 1fr !important;
   }
 }
