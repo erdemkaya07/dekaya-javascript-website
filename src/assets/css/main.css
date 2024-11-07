@@ -143,12 +143,18 @@
   "bannerRight bannerLeft";
 }
 
+.sectionHeader,
 .banner-right,
 .banner-right-text,
 .banner-left {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.banner-right-text h1 {
+  font-size: 3rem;
+  font-weight: 500;
 }
 
 .banner-right {
@@ -164,7 +170,28 @@
   grid-area: bannerLeft;
 }
 
+/* Banner Section End */
 
+/* Section Start */
+
+.sectionHeader {
+  h1 {
+    margin-bottom: 0;
+  }
+  .headerSpan {
+    width: 5rem;
+    height: 2px;
+    background-color: var(--primary-color);
+  }
+}
+
+/* Section End */
+
+/* Our Services Start */
+
+.our-services {
+  margin-block: 5rem;
+}
 
 /* Animation */
 

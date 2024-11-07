@@ -9,15 +9,15 @@ function BannerSection() {
       <div className='container'>
         <div className="banner-container">
           <div className="banner-right">
-            <div class="banner-right-text">
-              <h1 class="text-center pb-1">De-Kaya Soğutma Sistemleri</h1>
-              <h3 class="text-center pb-1">7 Gün 24 Saat Servis Hizmeti</h3>
-              <p class="text-center pb-1 pr-3" aria-label="Banner paragraph">
+            <div className="banner-right-text">
+              <h1>De-Kaya Soğutma Sistemleri</h1>
+              <h3>7 Gün 24 Saat Servis Hizmeti</h3>
+              <p aria-label="Banner paragraph">
                 Hizmetlerimiz ve işletmemiz hakkında daha detaylı bilgi almak
                 için lütfen bizimle iletişime geçin.
               </p>
             </div>
-            <Link to='/iletisim' class="btn btn-primary" aria-label="Contact button">
+            <Link to='/iletisim' className="btn btn-primary" aria-label="Contact button">
               İletişim
             </Link>
           </div>
