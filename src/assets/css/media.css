@@ -73,6 +73,25 @@
     grid-template-columns: repeat(2, 1fr) !important;
   }
 
+  .about-us-detail {
+    grid-template-columns: 1fr !important;
+  }
+
+  .detail-right {
+    width: 100% !important;
+  }
+
+  .detail-left {
+    display: none;
+  }
+
+  .footer-container-details {
+    grid-template-columns: 1fr !important;
+  }
+
+  .footer-links {
+    display: none;
+  }
 }
 
 /* Responsive for mobile */
@@ -118,5 +137,29 @@
 
   .services {
     grid-template-columns: 1fr !important;
+  }
+
+  .about-us-detail {
+    grid-template-columns: 1fr !important;
+  }
+
+  .detail-right-container {
+    grid-template-columns: 1fr !important;
+  }
+
+  .detail-right {
+    width: 100% !important;
+  }
+
+  .detail-left {
+    display: none;
+  }
+
+  .footer-container-details {
+    grid-template-columns: 1fr !important;
+  }
+
+  .footer-links {
+    display: none;
   }
 }

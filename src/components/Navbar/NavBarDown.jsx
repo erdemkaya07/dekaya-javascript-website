@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import DekayaLogo from '../../assets/images/dekaya-logo.png';
 import { Link, NavLink } from 'react-router-dom';
+import DeKayaLinks from '../DeKayaLinks';
 
 function NavBarDown({ isFixed }) {
 
@@ -31,21 +32,7 @@ function NavBarDown({ isFixed }) {
         </div>
         <div className="navbar-down-links">
           <ul id="main-menu" className={`main-menu ${isOpen ? "is-open" : ""}`} aria-label="main menu">
-            <li className="nav-item" aria-label="main menu links">
-              <NavLink to="/" className="nav-link">Anasayfa</NavLink>
-            </li>
-            <li className="nav-item" aria-label="main menu links">
-              <NavLink to="/hakkimizda" className="nav-link">Hakkımızda</NavLink>
-            </li>
-            <li className="nav-item" aria-label="main menu links">
-              <NavLink to="/hizmetlerimiz" className="nav-link">Hizmetlerimiz</NavLink>
-            </li>
-            <li className="nav-item" aria-label="main menu links">
-              <NavLink to="/referanslar" className="nav-link">Referanslar</NavLink>
-            </li>
-            <li className="nav-item" aria-label="main menu links">
-              <NavLink to="/iletisim" className="nav-link">İletişim</NavLink>
-            </li>
+            <DeKayaLinks />
           </ul>
           <button className="menu-btn" aria-label="menu button for mobile" onClick={mobileMenu}>
             <i className="fa-solid fa-bars menu-btn-icon"></i>

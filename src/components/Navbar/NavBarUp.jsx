@@ -18,10 +18,10 @@ function NavBarUp( {className} ) {
           <div className="socialMedia">
             <ul className="social-media-icon" aria-label="Social media icons">
               <li aria-label="Social media facebook">
-                <a href="#" aria-label="Social media facebook"><i className="fa-brands fa-facebook fs-1 secondary"></i></a>
+                <a href="https://www.facebook.com/dekaya2013/" target="_blank" rel="noopener noreferrer" aria-label="Social media facebook"><i className="fa-brands fa-facebook fs-1 secondary"></i></a>
               </li>
               <li aria-label="Social media instagram">
-                <a href="#" aria-label="Social media facebook"><i className="fa-brands fa-instagram fs-1 secondary"></i></a>
+                <a href="https://www.instagram.com/dekayasogutma/" aria-label="Social media facebook" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-instagram fs-1 secondary"></i></a>
               </li>
             </ul>
           </div>
