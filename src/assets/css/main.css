@@ -254,7 +254,7 @@
 
 .about-us-detail {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr) ;
   padding-block: 3rem;
 }
 
@@ -400,6 +400,47 @@
 .contact-details span {
   padding-right: 0.5rem;
 }
+
+/* Aboust Us */
+
+.about-sida-us-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block: 5rem;
+  gap: 4rem;
+}
+
+.about-us-details {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  width: 60%;
+  line-height: var(--line-height);
+
+}
+
+.about-sida-us-container img{
+  max-width: 25%;
+}
+
+/* Services Sida */
+
+.our-services-sida-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block: 4rem;
+}
+
+.sida-headers {
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+}
+
 
 footer {
   text-align: center;

@@ -4,19 +4,19 @@
       "title": "Soğuk Hava Depoları",
       "desc": "De-Kaya soğutma sistemleri olarak, Soğuk Hava Deposu satış,montaj, arıza, ve bakım hizmeti vermekteyiz.",
       "imagesrc": "http://localhost:5173/src/assets/images/coolingroom.jpg",
-      "imgalt": "Soğuk hava odası"
+      "imgalt": "Soğuk hava deposu satış ve bakım hizmeti"
     },
     {
       "title": "Ticari Buzdolapları Hakkında",
       "desc": "De-Kaya soğutma sistemleri olarak, Ticari Buzdolapları satış, montaj, arıza, ve bakım hizmeti vermekteyiz.",
       "imagesrc": "http://localhost:5173/src/assets/images/ticari-buzdolap.jpg",
-      "imgalt": "Ticari buzdolap resim"
+      "imgalt": "Ticari buzdolabı satış ve bakım hizmeti"
     },
     {
       "title": "Servis Hizmetleri",
       "desc": "De-Kaya Soğutma sistemleri olarak 7 gün 24 saat servis hizmetimiz bulunmaktadır. Müşterilerimiz 0542 533 5292 hattında servis bize ulaşabilirsiniz.",
       "imagesrc": "http://localhost:5173/src/assets/images/service.png",
-      "imgalt": "Servis hizmetleri resim"
+      "imgalt": "De-Kaya Soğutma sistemleri servis hizmetleri"
     },
     {
       "title": "Seyyar Soğutma Odaları",
@@ -28,13 +28,13 @@
       "title": "Keşif & Projelendirme Hizmetleri",
       "desc": " Firmamız soğuk oda taleplerine ve ticari buzdolap taleplerine ücretsiz keşif hizmeti sunmaktadır.",
       "imagesrc": "http://localhost:5173/src/assets/images/kesif.jpg",
-      "imgalt": "Keşif ve projelendirme hizmetleri servis"
+      "imgalt": "Soğuk hava deposu keşif ve projelendirme hizmeti"
     },
     {
       "title": "Buz Makineleri Servis ve Bakım Hizmetleri",
       "desc": "Marka ve Model farketmeksizin uzman kadromuzla Buz Makinası servisi sizlerin hizmetindedir.",
       "imagesrc": "http://localhost:5173/src/assets/images/buzmakinesi.jpg",
-      "imgalt": "Buz makinesi resim"
+      "imgalt": "Buz makineleri servis ve bakım hizmeti"
     }
   ]
 }
