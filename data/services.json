@@ -4,37 +4,74 @@
       "title": "Soğuk Hava Depoları",
       "desc": "De-Kaya soğutma sistemleri olarak, Soğuk Hava Deposu satış,montaj, arıza, ve bakım hizmeti vermekteyiz.",
       "imagesrc": "http://localhost:5173/src/assets/images/coolingroom.jpg",
-      "imgalt": "Soğuk hava deposu satış ve bakım hizmeti"
-    },
+      "imgalt": "Soğuk hava deposu satış ve bakım hizmeti",
+      "link": "soguk-hava-depolari",
+      "descriptions": [
+        "De-Kaya Soğutma Sistemleri olarak, soğuk hava deposu satış, montaj, arıza ve bakım hizmetlerinde uzmanız.",
+        "Soğuk hava depolarımız, muhafaza edilecek ürünlerin saklama koşulları ve miktarları dikkate alınarak özenle tasarlanır. Genellikle sebze, meyve ve süt ürünleri için +4°C soğuk muhafaza odaları; taze et, tavuk, balık gibi ürünler için -1°C soğuk muhafaza odaları; donmuş gıda ürünleri için -18°C donmuş muhafaza odaları ve genel şoklama odaları için -40°C derecelik odalar tercih edilmektedir.",
+        "Gıda ürünlerinin yanı sıra test odaları, işleme odaları, kimyasal ve diğer özel muhafaza ihtiyaçları için özel tasarımlar yapılmakta olup, gerekli ısı değerlerinde güvenli çalışma sağlamak adına özel soğutma grupları kullanılmaktadır. Soğutma gruplarının seçimi, ortamın iklim koşulları göz önünde bulundurularak yapılmalıdır. Soğuk oda yapıları ise poliüretan dolgulu sandviç panellerden oluşur. Bu paneller, oda içi ve dışı ısı şartlarına göre 40-42 dansite yoğunlukta, 60 mm’den 200 mm’ye kadar çeşitli kalınlıklarda üretilir. Paneller, eksantrik kilit sistemi ile birleştirilerek ısı ve hava sızdırmazlığı sağlanır. Demonte-monte özellikte olan bu panellerin kurulumu, alanında uzman ve deneyimli profesyoneller tarafından yapılmalıdır.",
+        "Soğuk hava depolarında, hem soğutma ünitesi hem de panel izolasyon işlemleri, yüksek kaliteli malzemeler ve uzmanlık gerektiren detaylı bir çalışmayla gerçekleştirilmelidir. De-Kaya Soğutma Sistemleri olarak, her adımda kaliteyi ve müşteri memnuniyetini ön planda tutarak en güvenilir çözümleri sunuyoruz."
+      ]
+      },
     {
       "title": "Ticari Buzdolapları Hakkında",
       "desc": "De-Kaya soğutma sistemleri olarak, Ticari Buzdolapları satış, montaj, arıza, ve bakım hizmeti vermekteyiz.",
       "imagesrc": "http://localhost:5173/src/assets/images/ticari-buzdolap.jpg",
-      "imgalt": "Ticari buzdolabı satış ve bakım hizmeti"
+      "imgalt": "Ticari buzdolabı satış ve bakım hizmeti",
+      "link": "ticari-buzdolaplari",
+      "descriptions": [
+        "De-Kaya Soğutma Sistemleri olarak, ticari buzdolapları satış, montaj, bakım ve arıza onarım hizmetleri sunuyoruz. İşletmenizin ihtiyaçlarına uygun, yüksek kaliteli ve enerji verimliliği yüksek çözümlerle restoran, otel, market ve kafe gibi işletmeler için ideal soğutma çözümleri sağlıyoruz.",
+      "Satış: İşletmenizin gereksinimlerine en uygun ticari buzdolabı modellerini belirlemeniz için destek sunuyoruz.",
+      "Montaj: Profesyonel montaj ekibimiz, buzdolabınızın maksimum performans ve güvenlikle çalışması için kurulum işlemlerini özenle gerçekleştirir.",
+      "Bakım: Periyodik bakım hizmetlerimiz ile cihazlarınızın ömrünü uzatır, enerji tasarrufunu artırırız.",
+      "Arıza ve Teknik Destek: Her türlü arıza durumunda hızlı ve etkili onarım hizmeti sunarak cihazlarınızın kesintisiz çalışmasını sağlarız.",
+      "De-Kaya Soğutma Sistemleri olarak, işletmenizin ticari soğutma ihtiyaçlarını en yüksek kalite standartlarında karşılıyoruz."
+      ]
     },
     {
       "title": "Servis Hizmetleri",
       "desc": "De-Kaya Soğutma sistemleri olarak 7 gün 24 saat servis hizmetimiz bulunmaktadır. Müşterilerimiz 0542 533 5292 hattında servis bize ulaşabilirsiniz.",
       "imagesrc": "http://localhost:5173/src/assets/images/service.png",
-      "imgalt": "De-Kaya Soğutma sistemleri servis hizmetleri"
+      "imgalt": "De-Kaya Soğutma sistemleri servis hizmetleri",
+      "link": "servis-hizmetleri",
+      "descriptions": [
+        "De-Kaya Soğutma Sistemleri olarak, 7 gün 24 saat kesintisiz servis hizmetimizle müşterilerimize hızlı, kaliteli ve sonuç odaklı çözümler sunuyoruz. Bölgesinde öncü bir firma olarak, büyük veya küçük birçok işletmenin soğutma ihtiyaçlarına yanıt veriyor ve müşteri memnuniyetini ön planda tutuyoruz.",
+        "0542 533 5292 (0542 5DE KAYA) numaralı servis hattımızdan bize ulaşarak talepte bulunabilirsiniz. Güçlü servis ağı ve altyapımızla Muğla ve tüm ilçeleri, Kaş, Kalkan, Denizli, Aydın ve tüm Türkiye’ye, müşterilerimizin talebi doğrultusunda hizmet vermekteyiz."
+      ]
     },
     {
       "title": "Seyyar Soğutma Odaları",
       "desc": "İşletmelere, düğünlere, mevlüt ve tüm organizasyonlara seyyar soğuk oda kiralama veya satış hizmeti",
       "imagesrc": "http://localhost:5173/src/assets/images/seyyarsogutma.jpg",
-      "imgalt": "Seyyar Soğutma Odası Satış ve Kiralama"
+      "imgalt": "Seyyar Soğutma Odası Satış ve Kiralama",
+      "link": "seyyar-sogutma-odalari",
+      "descriptions": [
+        "De-Kaya Soğutma Sistemleri olarak, seyyar soğuk hava depolarımızın imalatını ve satışını profesyonel ekibimizle gerçekleştiriyoruz. Üç farklı sıcaklık seçeneği sunarak (+4°C, -20°C ve -40°C şoklama), işletmenizin ihtiyacına en uygun çözümü sağlamaktayız. Türkiye'nin tüm bölgelerine gönderim imkanı sunmaktayız.",
+        "Seyyar soğuk hava depolarımız, mobil yapısı sayesinde esnek kullanım sağlar. Römork üzerine monte edilen bu soğutma odalarını aracınıza bağlayarak istediğiniz yere taşıyabilirsiniz. Tak-çalıştır özelliğiyle üretilen depolarımız, 220V ev elektriği ile kolayca çalıştırılabilir.",
+        "Muğla ve çevresinde ise düğün, mevlüt ve diğer organizasyonlarda kullanıma uygun seyyar soğuk oda kiralama hizmeti sunmaktayız.",
+        "Daha fazla bilgi ve detay için bizimle iletişime geçebilirsiniz:"
+      ]
     },
     {
       "title": "Keşif & Projelendirme Hizmetleri",
       "desc": " Firmamız soğuk oda taleplerine ve ticari buzdolap taleplerine ücretsiz keşif hizmeti sunmaktadır.",
       "imagesrc": "http://localhost:5173/src/assets/images/kesif.jpg",
-      "imgalt": "Soğuk hava deposu keşif ve projelendirme hizmeti"
+      "imgalt": "Soğuk hava deposu keşif ve projelendirme hizmeti",
+      "link": "kesif-ve-projelendirme",
+      "descriptions": [
+        "De-Kaya Soğutma Sistemleri olarak, tüm soğuk oda ve ticari buzdolap taleplerinde ücretsiz keşif hizmeti sunmaktayız. İster küçük, ister büyük ölçekli projeler olsun, her müşterimizin ihtiyaçlarına en uygun çözümü sağlamak için özenle çalışıyoruz.",
+        "Keşif sürecinde, müşterinin ihtiyaçları ve beklentileri dinlenir, proje için ayrılan alan detaylı bir şekilde incelenir. Müşteri talep ederse, projeye özel çizimler hazırlanarak JPEG veya PDF formatında paylaşılır. Müşteri onayı alındıktan sonra, süreç adım adım devam eder: üretim, nakliye, montaj ve devreye alma aşamaları titizlikle tamamlanır. Bu sayede müşterilerimiz, sorunsuz, sağlıklı ve verimli bir şekilde ürünlerini kullanmaya başlayabilirler."
+      ]
     },
     {
       "title": "Buz Makineleri Servis ve Bakım Hizmetleri",
       "desc": "Marka ve Model farketmeksizin uzman kadromuzla Buz Makinası servisi sizlerin hizmetindedir.",
       "imagesrc": "http://localhost:5173/src/assets/images/buzmakinesi.jpg",
-      "imgalt": "Buz makineleri servis ve bakım hizmeti"
+      "imgalt": "Buz makineleri servis ve bakım hizmeti",
+      "link": "buz-makineleri-servis-bakim",
+      "descriptions":[
+        "De-Kaya Soğutma Sistemleri olarak, marka ve model fark etmeksizin tüm buz makineleri için profesyonel servis hizmeti sunmaktayız. Alanında uzman kadromuz, buz makinelerinizin arıza tespiti, onarım ve bakım süreçlerini en hızlı ve verimli şekilde gerçekleştirir. Yüksek kalite standartlarımızla, işletmenizin ihtiyaçlarına uygun, kesintisiz bir soğutma çözümü sağlamak için yanınızdayız."
+      ]
     }
   ]
 }

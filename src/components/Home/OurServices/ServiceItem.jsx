@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function ServiceItem({ item }) {
   return (
@@ -9,9 +10,9 @@ function ServiceItem({ item }) {
       <div className="card-details">
         <h3>{item.title}</h3>
         <p>{item.desc}</p>
-        <a href="#">
+        <Link to={`/hizmetlerimiz/${item.link}`}>
           Devamını gör<i className="fa-solid fa-arrow-right pl-0"></i>
-        </a>
+        </Link>
       </div>
     </div>
   );

@@ -92,6 +92,21 @@
   .footer-links {
     display: none;
   }
+  .about-us-details {
+    width: 100% !important;
+  }
+
+  .about-sida-us-container img {
+    max-width: 50% !important;
+}
+
+.service-detail p { 
+  width: 100% !important;
+}
+
+.service-detail img {
+  width: 50% !important;
+}
 }
 
 /* Responsive for mobile */
@@ -162,4 +177,20 @@
   .footer-links {
     display: none;
   }
+
+  .about-us-details {
+    width: 100% !important;
+  }
+
+  .about-sida-us-container img {
+    max-width: 100% !important;
+}
+
+.service-detail p { 
+  width: 100% !important;
+}
+
+.service-detail img {
+  width: 100% !important;
+}
 }

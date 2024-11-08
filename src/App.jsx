@@ -13,6 +13,7 @@ import Contact from "./views/Contact";
 import Footer from "./components/Footer";
 import { HelmetProvider } from "react-helmet-async";
 import FooterDetails from "./components/FooterDetails";
+import ServiceDetail from "./components/Home/OurServices/ServiceDetail";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/hakkimizda" element={<AboutUs />} />
             <Route path="/hizmetlerimiz" element={<Services />} />
+            <Route path="/hizmetlerimiz/:serviceId" element={<ServiceDetail />} />
             <Route path="/referanslar" element={<References />} />
             <Route path="/iletisim" element={<Contact />} />
           </Routes>
