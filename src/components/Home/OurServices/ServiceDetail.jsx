@@ -1,7 +1,6 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import ServicesData from "../../../../data/services.json";
-import res from '../../../assets/images/referans/'
 
 function ServiceDetail() {
   const { serviceId } = useParams(); // URL'den gelen parametre

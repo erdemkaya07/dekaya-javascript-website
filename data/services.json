@@ -31,7 +31,7 @@
     {
       "title": "Servis Hizmetleri",
       "desc": "De-Kaya Soğutma sistemleri olarak 7 gün 24 saat servis hizmetimiz bulunmaktadır. Müşterilerimiz 0542 533 5292 hattında servis bize ulaşabilirsiniz.",
-      "imagesrc": "https://www.de-kaya.com/src/assets/images/service.png",
+      "imagesrc": "/src/assets/images/service.png",
       "imgalt": "De-Kaya Soğutma sistemleri servis hizmetleri",
       "link": "servis-hizmetleri",
       "descriptions": [
