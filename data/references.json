@@ -1,14 +1,14 @@
 {
   "references" : [
     {
-      "imgsrc": "/assets/images/referans/ahmet-yar.jpg",
+      "imgsrc": "https://www.de-kaya.com/src/assets/images/referans/ahmet-yar.jpg",
       "imgalt": "Ahmet Yar Yetkili Muğla Yetkili Servisi De-Kaya Soğutma Sistemleri",
       "referenceTitle": "AHMET YAR SOĞ. SAN TİC.AŞ.",
       "referenceDesc": "De-Kaya Soğutma Sistemleri AHMET YAR SOĞ. SAN TİC.AŞ. 'nin bölgeyetkili servisidir.",
       "category": "kurumsal"
     },
     {
-      "imgsrc": "../../../assets/images/referans/nurdil.jpg",
+      "imgsrc": "https://www.de-kaya.com/src/assets/images/referans/nurdil.jpg",
       "imgalt": "Nurdil Tek. Soğ. San. Tic. A.Ş Yetkili Muğla Yetkili Servisi De-Kaya Soğutma Sistemleri",
       "referenceTitle": "NURDİL TEK. SOĞ.SAN.TİC. A.Ş",
       "referenceDesc": "De-Kaya Soğutma Sistemleri NURDİL TEK. SOĞ.SAN.TİC. A.Ş. 'nin bölge yetkili servisidir.",
@@ -22,63 +22,63 @@
       "category": "kurumsal"
     },
     {
-      "imgsrc": "http://www.de-kaya.com/src/assets/images/referans/akdenizsogutma.jpg",
+      "imgsrc": "https://www.de-kaya.com/src/assets/images/referans/akdenizsogutma.jpg",
       "imgalt": "AKDENİZ SOĞUTMA MALZEMELERİ VE OTEL EKİPMANLARI SAN. TİC. LTD. ŞTİ",
       "referenceTitle": "AKDENİZ SOĞUTMA MALZEMELERİ VE OTEL EKİPMANLARI SAN. TİC. LTD. ŞTİ",
       "referenceDesc": "De-Kaya Soğutma Sistemleri AKDENİZ SOĞUTMA MALZEMELERİ VE OTEL EKİPMANLARI SAN. TİC. LTD. ŞTİ. 'nin bölge yetkili servisidir.",
       "category": "kurumsal"
     },
     {
-      "imgsrc": "http://www.de-kaya.com/src/assets/images/referans/esensogutma.jpg",
+      "imgsrc": "https://www.de-kaya.com/src/assets/images/referans/esensogutma.jpg",
       "imgalt": "ESEN IST.SOĞ. ELEK. İNŞ SAN. VE TİC LTD ŞTİ.",
       "referenceTitle": "ESEN IST.SOĞ. ELEK. İNŞ SAN. VE TİC LTD ŞTİ.",
       "referenceDesc": "De-Kaya Soğutma Sistemleri ESEN IST.SOĞ. ELEK. İNŞ SAN. VE TİC LTD ŞTİ. 'nin bölge yetkili servisidir.",
       "category": "kurumsal"
     },
     {
-      "imgsrc": "http://www.de-kaya.com/src/assets/images/referans/krutzo.png",
+      "imgsrc": "https://www.de-kaya.com/src/assets/images/referans/krutzo.png",
       "imgalt": "KRUTZO MAK.MÜH.SAN.VE TİC. LTD.ŞTİ",
       "referenceTitle": "KRUTZO MAK.MÜH.SAN.VE TİC. LTD.ŞTİ",
       "referenceDesc": "De-Kaya Soğutma Sistemleri KRUTZO MAK.MÜH.SAN.VE TİC. LTD.ŞTİ 'nin bölge yetkili servisidir.",
       "category": "kurumsal"
     },
     {
-      "imgsrc": "http://www.de-kaya.com/src/assets/images/referans/diktas.jpg",
+      "imgsrc": "https://www.de-kaya.com/src/assets/images/referans/diktas.jpg",
       "imgalt": "DİKTAŞ SOĞUTMA VE METAL İMALAT SAN. TİC. A.Ş",
       "referenceTitle": "DİKTAŞ SOĞUTMA VE METAL İMALAT SAN. TİC. A.Ş",
       "referenceDesc": "De-Kaya Soğutma Sistemleri DİKTAŞ SOĞUTMA VE METAL İMALAT SAN.TİC. A.Ş 'nin bölge yetkili servisidir.",
       "category": "kurumsal"
     },
     {
-      "imgsrc": "http://www.de-kaya.com/src/assets/images/referans/efes.jpg",
+      "imgsrc": "https://www.de-kaya.com/src/assets/images/referans/efes.jpg",
       "imgalt": "EFE MARKET EKİPMANLARI VE END. SOĞ. SAN TİC. A.Ş.",
       "referenceTitle": "EFE MARKET EKİPMANLARI VE END. SOĞ. SAN TİC. A.Ş.",
       "referenceDesc": "De-Kaya Soğutma Sistemleri EFE MARKET EKİPMANLARI VE END. SOĞ. SAN TİC. A.Ş. 'nin bölge yetkili servisidir.",
       "category": "kurumsal"
     },
     {
-      "imgsrc": "http://www.de-kaya.com/src/assets/images/referans/yartek.jpg",
+      "imgsrc": "https://www.de-kaya.com/src/assets/images/referans/yartek.jpg",
       "imgalt": "YAR TEK SOĞ.SAN VE TİC LTD ŞTİ.",
       "referenceTitle": "YAR TEK SOĞ.SAN VE TİC LTD ŞTİ.",
       "referenceDesc": "De-Kaya Soğutma Sistemleri YAR TEK SOĞ.SAN VE TİC LTD ŞTİ'nin bölge yetkili servisidir.",
       "category": "kurumsal"
     },
     {
-      "imgsrc": "http://www.de-kaya.com/src/assets/images/referans/proso.jpg",
+      "imgsrc": "https://www.de-kaya.com/src/assets/images/referans/proso.jpg",
       "imgalt": "PROSO SOĞUTMA VE MAR.EKPMANLARI SATIŞ PAZ.A.Ş.",
       "referenceTitle": "PROSO SOĞUTMA VE MAR.EKPMANLARI SATIŞ PAZ.A.Ş.",
       "referenceDesc": "De-Kaya Soğutma Sistemleri PROSO SOĞUTMA VE MAR.EKPMANLARI SATIŞ PAZ.A.Ş. 'nin bölge yetkili servisidir.",
       "category": "kurumsal"
     },
     {
-      "imgsrc": "http://www.de-kaya.com/src/assets/images/referans/drksg.jpg",
+      "imgsrc": "https://www.de-kaya.com/src/assets/images/referans/drksg.jpg",
       "imgalt": "DRK SOĞUTMA",
       "referenceTitle": "DRK SOĞUTMA",
       "referenceDesc": "De-Kaya Soğutma Sistemleri DRK SOĞUTMA'nın bölge yetkili servisidir.",
       "category": "kurumsal"
     },
     {
-      "imgsrc": "http://www.de-kaya.com/src/assets/images/referans/cantek.jpg",
+      "imgsrc": "https://www.de-kaya.com/src/assets/images/referans/cantek.jpg",
       "imgalt": "CANTEK PRJ.TAS.MÜH.İNŞ.TAAHÜT END.SOĞ.SAN.VE TİC A.Ş",
       "referenceTitle": "CANTEK PRJ.TAS.MÜH.İNŞ.TAAHÜT END.SOĞ.SAN.VE TİC A.Ş",
       "referenceDesc": "De-Kaya Soğutma Sistemleri CANTEK PRJ.TAS.MÜH.İNŞ.TAAHÜT END.SOĞ.SAN.VE TİC A.Ş. 'nin bölge yetkili servisidir.",
