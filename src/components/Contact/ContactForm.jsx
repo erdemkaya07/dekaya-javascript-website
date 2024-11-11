@@ -78,6 +78,8 @@ function ContactForm() {
       },
       process.env.REACT_APP_EMAILJS_USER_ID
     )
+
+    
     .then((response) => {
       console.log("E-posta başarıyla gönderildi!", response.status, response.text);
       setSuccessMessage("Mesajınız başarıyla gönderildi!");
@@ -95,6 +97,9 @@ function ContactForm() {
     });
   };
 
+  console.log("Service ID:", process.env.REACT_APP_EMAILJS_SERVICE_ID);
+console.log("Template ID:", process.env.REACT_APP_EMAILJS_TEMPLATE_ID);
+console.log("User ID:", process.env.REACT_APP_EMAILJS_USER_ID);
   return (
     <form onSubmit={handleSubmit}>
       <div className="contact-user">
