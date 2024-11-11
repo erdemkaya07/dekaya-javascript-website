@@ -1,14 +1,14 @@
 {
   "references" : [
     {
-      "imgsrc": "/src/assets/images/referans/ahmet-yar.jpg",
+      "imgsrc": "/assets/images/referans/ahmet-yar.jpg",
       "imgalt": "Ahmet Yar Yetkili Muğla Yetkili Servisi De-Kaya Soğutma Sistemleri",
       "referenceTitle": "AHMET YAR SOĞ. SAN TİC.AŞ.",
       "referenceDesc": "De-Kaya Soğutma Sistemleri AHMET YAR SOĞ. SAN TİC.AŞ. 'nin bölgeyetkili servisidir.",
       "category": "kurumsal"
     },
     {
-      "imgsrc": "/src/assets/images/referans/nurdil.jpg",
+      "imgsrc": "../../../assets/images/referans/nurdil.jpg",
       "imgalt": "Nurdil Tek. Soğ. San. Tic. A.Ş Yetkili Muğla Yetkili Servisi De-Kaya Soğutma Sistemleri",
       "referenceTitle": "NURDİL TEK. SOĞ.SAN.TİC. A.Ş",
       "referenceDesc": "De-Kaya Soğutma Sistemleri NURDİL TEK. SOĞ.SAN.TİC. A.Ş. 'nin bölge yetkili servisidir.",
