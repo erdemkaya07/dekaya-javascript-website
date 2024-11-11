@@ -110,6 +110,10 @@
 .references-container {
   grid-template-columns: repeat(2, 1fr) !important;
 }
+.contact-details-page {
+  grid-template-columns: 1fr !important;
+  gap: 3rem;
+}
 }
 
 /* Responsive for mobile */
@@ -199,5 +203,12 @@
 
 .references-container {
   grid-template-columns: 1fr !important;
+}
+.contact-details-page {
+  grid-template-columns: 1fr !important;
+  gap: 3rem;
+}
+.contact-form-container { 
+  width: 100% !important;
 }
 }
