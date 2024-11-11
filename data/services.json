@@ -3,7 +3,7 @@
     {
       "title": "Soğuk Hava Depoları",
       "desc": "De-Kaya soğutma sistemleri olarak, Soğuk Hava Deposu satış,montaj, arıza, ve bakım hizmeti vermekteyiz.",
-      "imagesrc": "/src/assets/images/coolingroom.jpg",
+      "imagesrc": "public/images/coolingroom.jpg",
       "imgalt": "Soğuk hava deposu satış ve bakım hizmeti",
       "link": "soguk-hava-depolari",
       "descriptions": [
@@ -16,7 +16,7 @@
     {
       "title": "Ticari Buzdolapları Hakkında",
       "desc": "De-Kaya soğutma sistemleri olarak, Ticari Buzdolapları satış, montaj, arıza, ve bakım hizmeti vermekteyiz.",
-      "imagesrc": "/src/assets/images/ticari-buzdolap.jpg",
+      "imagesrc": "/public/images/coolingroom.jpg",
       "imgalt": "Ticari buzdolabı satış ve bakım hizmeti",
       "link": "ticari-buzdolaplari",
       "descriptions": [
