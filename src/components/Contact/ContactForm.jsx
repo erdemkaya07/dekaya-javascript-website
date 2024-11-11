@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
-import ReCAPTCHA from "react-google-recaptcha"; // reCAPTCHA kütüphanesi
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -12,13 +11,22 @@ function ContactForm() {
 
   const [errors, setErrors] = useState({});
   const [successMessage, setSuccessMessage] = useState("");
-  const [captchaToken, setCaptchaToken] = useState(null);
+
+  const [mathQuestion, setMathQuestion] = useState({ question: "", answer: null });
+  const [userAnswer, setUserAnswer] = useState("");
+
+  // Rastgele bir matematik sorusu oluştur
+  useEffect(() => {
+    const num1 = Math.floor(Math.random() * 10);
+    const num2 = Math.floor(Math.random() * 10);
+    setMathQuestion({ question: `${num1} + ${num2} = ?`, answer: num1 + num2 });
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
     
-    // Regex doğrulaması (Daha önce eklenmişti)
+    // Regex doğrulaması
     if (name === "name") {
       const nameRegex = /^[a-zA-ZğüşöçıİĞÜŞÖÇ\s]+$/;
       if (!nameRegex.test(value)) {
@@ -50,15 +58,12 @@ function ContactForm() {
     }
   };
 
-  const handleCaptchaChange = (token) => {
-    setCaptchaToken(token); // reCAPTCHA doğrulama anahtarını kaydet
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!captchaToken) {
-      alert("Lütfen reCAPTCHA doğrulamasını tamamlayın.");
+    // Kullanıcı cevabının doğru olup olmadığını kontrol et
+    if (parseInt(userAnswer) !== mathQuestion.answer) {
+      alert("Matematik sorusunu yanlış yanıtladınız. Lütfen tekrar deneyin.");
       return;
     }
 
@@ -78,8 +83,6 @@ function ContactForm() {
       },
       process.env.REACT_APP_EMAILJS_USER_ID
     )
-
-    
     .then((response) => {
       console.log("E-posta başarıyla gönderildi!", response.status, response.text);
       setSuccessMessage("Mesajınız başarıyla gönderildi!");
@@ -89,7 +92,7 @@ function ContactForm() {
         option: "Arıza Bildirimi",
         message: "",
       });
-      setCaptchaToken(null); // Başarıdan sonra reCAPTCHA sıfırla
+      setUserAnswer(""); // Kullanıcı cevabını sıfırla
     })
     .catch((err) => {
       console.error("E-posta gönderilirken hata oluştu:", err);
@@ -97,9 +100,6 @@ function ContactForm() {
     });
   };
 
-  console.log("Service ID:", process.env.REACT_APP_EMAILJS_SERVICE_ID);
-console.log("Template ID:", process.env.REACT_APP_EMAILJS_TEMPLATE_ID);
-console.log("User ID:", process.env.REACT_APP_EMAILJS_USER_ID);
   return (
     <form onSubmit={handleSubmit}>
       <div className="contact-user">
@@ -146,12 +146,17 @@ console.log("User ID:", process.env.REACT_APP_EMAILJS_USER_ID);
           onChange={handleChange}
         ></textarea>
       </div>
-      
-      {/* reCAPTCHA Bileşeni */}
-      <ReCAPTCHA
-        sitekey="6LdeU3sqAAAAAAjSzBlkL0KUUWn4oZ8_we2NKZfF" // Google'dan aldığınız Site Anahtarı
-        onChange={handleCaptchaChange}
-      />
+
+      {/* Matematik Sorusu */}
+      <div>
+        <label>{mathQuestion.question}</label>
+        <input
+          type="text"
+          placeholder="Cevabınızı girin"
+          value={userAnswer}
+          onChange={(e) => setUserAnswer(e.target.value)}
+        />
+      </div>
 
       <button className="btn" type="submit">Gönder</button>
       
