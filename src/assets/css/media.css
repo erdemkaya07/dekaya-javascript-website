@@ -212,6 +212,6 @@
   width: 100% !important;
 }
 .banner-left {
-  display: none;
+  display: none !important;
 }
 }
