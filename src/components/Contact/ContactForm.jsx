@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import emailjs from "emailjs-com";
 
 function ContactForm() {
@@ -11,16 +11,6 @@ function ContactForm() {
 
   const [errors, setErrors] = useState({});
   const [successMessage, setSuccessMessage] = useState("");
-
-  const [mathQuestion, setMathQuestion] = useState({ question: "", answer: null });
-  const [userAnswer, setUserAnswer] = useState("");
-
-  // Rastgele bir matematik sorusu oluştur
-  useEffect(() => {
-    const num1 = Math.floor(Math.random() * 10);
-    const num2 = Math.floor(Math.random() * 10);
-    setMathQuestion({ question: `${num1} + ${num2} = ?`, answer: num1 + num2 });
-  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -61,27 +51,21 @@ function ContactForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Kullanıcı cevabının doğru olup olmadığını kontrol et
-    if (parseInt(userAnswer) !== mathQuestion.answer) {
-      alert("Matematik sorusunu yanlış yanıtladınız. Lütfen tekrar deneyin.");
-      return;
-    }
-
     if (Object.keys(errors).length > 0) {
       alert("Lütfen formu doğru doldurduğunuzdan emin olun.");
       return;
     }
 
     emailjs.send(
-      process.env.REACT_APP_EMAILJS_SERVICE_ID,
-      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+      "service_l1k81bp",
+      "template_7m9z5w3",
       {
         name: formData.name,
         email: formData.email,
         option: formData.option,
         message: formData.message,
       },
-      process.env.REACT_APP_EMAILJS_USER_ID
+      "VNXL7YSQNVV0rZkfd"
     )
     .then((response) => {
       console.log("E-posta başarıyla gönderildi!", response.status, response.text);
@@ -92,7 +76,6 @@ function ContactForm() {
         option: "Arıza Bildirimi",
         message: "",
       });
-      setUserAnswer(""); // Kullanıcı cevabını sıfırla
     })
     .catch((err) => {
       console.error("E-posta gönderilirken hata oluştu:", err);
@@ -145,17 +128,6 @@ function ContactForm() {
           value={formData.message}
           onChange={handleChange}
         ></textarea>
-      </div>
-
-      {/* Matematik Sorusu */}
-      <div>
-        <label>{mathQuestion.question}</label>
-        <input
-          type="text"
-          placeholder="Cevabınızı girin"
-          value={userAnswer}
-          onChange={(e) => setUserAnswer(e.target.value)}
-        />
       </div>
 
       <button className="btn" type="submit">Gönder</button>
