@@ -209,7 +209,8 @@
   gap: 3rem;
 }
 .contact-form-container { 
-  width: 100% !important;
+  width: 90% !important;
+  padding: 2rem !important;
 }
 .banner-left {
   display: none !important;
