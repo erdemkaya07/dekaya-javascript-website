@@ -464,6 +464,38 @@
   width: 30%;
 }
 
+/* Reference Page */
+
+.references-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.reference-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-block: 3rem;
+  padding: 1rem;
+  box-shadow: var(--box-shadow);
+  &:hover {
+    transform: scale(1.04);
+    transition: all 0.5s;
+  }
+}
+
+.reference-img {
+  width: 80%;
+}
+
+.reference-title {
+  font-weight: 700;
+}
+
 footer {
   text-align: center;
   padding-block: 2rem;
