@@ -57,7 +57,7 @@ function ContactForm() {
     }
 
     emailjs.send(
-      "service_l1k81bp",
+      "service_bxc90gj",
       "template_7m9z5w3",
       {
         name: formData.name,
