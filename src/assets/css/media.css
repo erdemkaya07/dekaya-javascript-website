@@ -107,6 +107,9 @@
 .service-detail img {
   width: 50% !important;
 }
+.references-container {
+  grid-template-columns: repeat(2, 1fr) !important;
+}
 }
 
 /* Responsive for mobile */
@@ -192,5 +195,9 @@
 
 .service-detail img {
   width: 100% !important;
+}
+
+.references-container {
+  grid-template-columns: 1fr !important;
 }
 }
