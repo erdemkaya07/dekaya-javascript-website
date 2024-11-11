@@ -14,11 +14,13 @@ import Footer from "./components/Footer";
 import { HelmetProvider } from "react-helmet-async";
 import FooterDetails from "./components/FooterDetails";
 import ServiceDetail from "./components/Home/OurServices/ServiceDetail";
+import ScrollToTop from "./api/ScrollToTop";
 
 function App() {
   return (
     <HelmetProvider>
       <BrowserRouter>
+      <ScrollToTop />
         <NavBar />
         <main>
           <Routes>
