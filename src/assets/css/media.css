@@ -214,4 +214,9 @@
 .banner-left {
   display: none !important;
 }
+.banner-right-text {
+  font-size: 2.5rem;
+  text-wrap: balance;
+  text-align: center;
+}
 }
