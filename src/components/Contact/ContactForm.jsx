@@ -73,15 +73,15 @@ function ContactForm() {
     }
 
     emailjs.send(
-      process.env.REACT_APP_EMAILJS_SERVICE_ID,
-      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+      "service_l1k81bp",
+      "template_7m9z5w3",
       {
         name: formData.name,
         email: formData.email,
         option: formData.option,
         message: formData.message,
       },
-      process.env.REACT_APP_EMAILJS_USER_ID
+      "VNXL7YSQNVV0rZkfd"
     )
     .then((response) => {
       console.log("E-posta başarıyla gönderildi!", response.status, response.text);
