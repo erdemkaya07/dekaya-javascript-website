@@ -449,6 +449,10 @@
   margin-bottom: 3rem;
 }
 
+.service-detail {
+  margin-top: 4rem;
+}
+
 .service-detail-desc {
   gap: 1rem;
 }
