@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
+import ReCAPTCHA from "react-google-recaptcha";
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -8,9 +9,9 @@ function ContactForm() {
     option: "Arıza Bildirimi",
     message: "",
   });
-
   const [errors, setErrors] = useState({});
   const [successMessage, setSuccessMessage] = useState("");
+  const [recaptchaValue, setRecaptchaValue] = useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -48,8 +49,17 @@ function ContactForm() {
     }
   };
 
+  const handleRecaptchaChange = (value) => {
+    setRecaptchaValue(value);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!recaptchaValue) {
+      alert("Lütfen reCAPTCHA doğrulamasını tamamlayın.");
+      return;
+    }
 
     if (Object.keys(errors).length > 0) {
       alert("Lütfen formu doğru doldurduğunuzdan emin olun.");
@@ -76,6 +86,7 @@ function ContactForm() {
         option: "Arıza Bildirimi",
         message: "",
       });
+      setRecaptchaValue(null);
     })
     .catch((err) => {
       console.error("E-posta gönderilirken hata oluştu:", err);
@@ -129,6 +140,11 @@ function ContactForm() {
           onChange={handleChange}
         ></textarea>
       </div>
+
+      <ReCAPTCHA
+        sitekey="6LdeU3sqAAAAAAjSzBlkL0KUUWn4oZ8_we2NKZfF" // Google reCAPTCHA'dan aldığınız site anahtarını buraya yapıştırın
+        onChange={handleRecaptchaChange}
+      />
 
       <button className="btn" type="submit">Gönder</button>
       
