@@ -114,6 +114,9 @@
   grid-template-columns: 1fr !important;
   gap: 3rem;
 }
+.blog-container {
+  padding-inline: 1rem !important;
+}
 }
 
 /* Responsive for mobile */
@@ -219,5 +222,8 @@
   font-size: 2.5rem;
   text-wrap: balance;
   text-align: center;
+}
+.blog-container {
+  padding-inline: 1rem !important;
 }
 }

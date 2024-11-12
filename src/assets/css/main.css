@@ -587,8 +587,12 @@
   gap: 2rem;
   margin-top: 3rem;
   margin-bottom: 10rem;
+}
+
+.blog-detail-content {
   line-height: 1.5rem;
 }
+
 
 footer {
   text-align: center;
