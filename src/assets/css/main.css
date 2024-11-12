@@ -341,7 +341,7 @@
 .contact-details li {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem;
+  margin-bottom: .4rem;
 }
 
 .footer-detail-header {
