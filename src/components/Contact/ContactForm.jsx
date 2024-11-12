@@ -57,8 +57,8 @@ function ContactForm() {
     }
 
     emailjs.send(
-      "service_takgu4s",
-      "template_7m9z5w3",
+      "service_uzxp3ll",
+      "template_09jv0zr",
       {
         name: formData.name,
         email: formData.email,
