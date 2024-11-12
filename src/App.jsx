@@ -15,6 +15,8 @@ import { HelmetProvider } from "react-helmet-async";
 import FooterDetails from "./components/FooterDetails";
 import ServiceDetail from "./components/Home/OurServices/ServiceDetail";
 import ScrollToTop from "./api/ScrollToTop";
+import BlogList from "./components/Blog/BlogList";
+import BlogDetail from "./components/Blog/BlogDetail";
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
             <Route path="/hizmetlerimiz/:serviceId" element={<ServiceDetail />} />
             <Route path="/referanslar" element={<References />} />
             <Route path="/iletisim" element={<Contact />} />
+            <Route path="/blog" element={<BlogList />} />
+            <Route path="/blog/:slug" element={<BlogDetail />} /> 
           </Routes>
         </main>
         <FooterDetails />

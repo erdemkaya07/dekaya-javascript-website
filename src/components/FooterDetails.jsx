@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import DeKayaLinks from "./DeKayaLinks";
+import blogs from '../../data/blogs.json';
+import { Link } from "react-router-dom";
 
 function FooterDetails() {
   const [email, setEmail] = useState(""); // Email durumunu tutmak için state ekliyoruz.
@@ -37,10 +39,13 @@ function FooterDetails() {
           <div className="footer-blog">
             <h2 className="footer-detail-header">Blog</h2>
             <div className="footer-header-line"></div>
-            <p>Seyyar Soğutma Odası Nedir ve Nerelerde Kullanılır?</p>
-            <p>Düğün ve Organizasyonlarda Soğutma Odası Kiralamanın Faydaları</p>
-            <p>Taşınabilir Soğutma Odalarının Teknik Özellikleri ve Avantajları</p>
-            <p>Seyyar Soğutma Odası Satın Alırken Nelere Dikkat Edilmelidir?</p>
+            {blogs.map((blog) => (
+              <p key={blog.id}>
+                <Link to={`/blog/${blog.slug}`}>
+                  {blog.title}
+                </Link>
+              </p>
+            ))}
           </div>
           <div className="newsletters">
             <h2 className="footer-detail-header">Haberdar olun</h2>
@@ -67,7 +72,7 @@ function FooterDetails() {
           <div className="footer-header-line"></div>
             <ul>
               <li><span className="bold">Servis talep hattı - 7/24:</span> <a href="tel:+905425335292">+90 542 533 5292</a></li>
-              <li><span className="bold">Telefon:</span> Ekrem Kaya - <a href="tel:+905424522757">+90 542 452 2757</a></li>
+              <li><span className="bold">Telefon:</span> <a href="tel:+905424522757">+90 542 452 2757</a></li>
               <li><span className="bold">E-posta:</span> <a href="mailto:ekrem.kaya@de-kaya.com">ekrem.kaya@de-kaya.com</a></li>
               <li><span className="bold">Adres:</span> Yerbelen Mahallasi, Muğla Fethiye Yolu No:263, 48600 Ortaca/Muğla</li>
             </ul>

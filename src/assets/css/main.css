@@ -338,6 +338,12 @@
   margin-bottom: 2rem;
 }
 
+.contact-details li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
 .footer-detail-header {
   margin-bottom: 0;
 }
@@ -564,6 +570,24 @@
   padding-block: .6rem;
   border: 0;
   border-radius: .5rem;
+}
+
+/* Blog */
+
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 15rem;
+}
+
+.blog-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 10rem;
+  line-height: 1.5rem;
 }
 
 footer {
