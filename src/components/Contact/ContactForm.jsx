@@ -16,7 +16,7 @@ function ContactForm() {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
-    
+
     // Regex doğrulaması
     if (name === "name") {
       const nameRegex = /^[a-zA-ZğüşöçıİĞÜŞÖÇ\s]+$/;
@@ -53,7 +53,7 @@ function ContactForm() {
     setRecaptchaValue(value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (!recaptchaValue) {
@@ -66,32 +66,59 @@ function ContactForm() {
       return;
     }
 
-    emailjs.send(
-      "service_uzxp3ll",
-      "template_09jv0zr",
-      {
-        name: formData.name,
-        email: formData.email,
-        option: formData.option,
-        message: formData.message,
-      },
-      "VNXL7YSQNVV0rZkfd"
-    )
-    .then((response) => {
-      console.log("E-posta başarıyla gönderildi!", response.status, response.text);
-      setSuccessMessage("Mesajınız başarıyla gönderildi!");
-      setFormData({
-        name: "",
-        email: "",
-        option: "Arıza Bildirimi",
-        message: "",
+    try {
+      // Backend'e reCAPTCHA doğrulama isteği gönder
+      const recaptchaResponse = await fetch("/api/verify-recaptcha", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ token: recaptchaValue }),
       });
-      setRecaptchaValue(null);
-    })
-    .catch((err) => {
-      console.error("E-posta gönderilirken hata oluştu:", err);
-      alert("Mesaj gönderilirken bir hata oluştu.");
-    });
+
+      const recaptchaResult = await recaptchaResponse.json();
+
+      if (!recaptchaResult.success) {
+        alert("reCAPTCHA doğrulaması başarısız. Lütfen tekrar deneyin.");
+        return;
+      }
+
+      // Eğer doğrulama başarılıysa email gönder
+      emailjs
+        .send(
+          "service_uzxp3ll",
+          "template_09jv0zr",
+          {
+            name: formData.name,
+            email: formData.email,
+            option: formData.option,
+            message: formData.message,
+          },
+          "VNXL7YSQNVV0rZkfd"
+        )
+        .then((response) => {
+          console.log(
+            "E-posta başarıyla gönderildi!",
+            response.status,
+            response.text
+          );
+          setSuccessMessage("Mesajınız başarıyla gönderildi!");
+          setFormData({
+            name: "",
+            email: "",
+            option: "Arıza Bildirimi",
+            message: "",
+          });
+          setRecaptchaValue(null);
+        })
+        .catch((err) => {
+          console.error("E-posta gönderilirken hata oluştu:", err);
+          alert("Mesaj gönderilirken bir hata oluştu.");
+        });
+    } catch (error) {
+      console.error("reCAPTCHA doğrulama hatası:", error);
+      alert("Bir hata oluştu. Lütfen tekrar deneyin.");
+    }
   };
 
   return (
@@ -119,15 +146,15 @@ function ContactForm() {
         {errors.email && <p style={{ color: "red" }}>{errors.email}</p>}
       </div>
       <div className="contact-options">
-        <label htmlFor="option">Ne Hakkında İletişim kurmak istiyorsunuz?</label>
-        <select
-          name="option"
-          value={formData.option}
-          onChange={handleChange}
-        >
+        <label htmlFor="option">
+          Ne Hakkında İletişim kurmak istiyorsunuz?
+        </label>
+        <select name="option" value={formData.option} onChange={handleChange}>
           <option value="Arıza Bildirimi">Arıza Bildirimi</option>
           <option value="Satış">Satış</option>
-          <option value="Seyyar Soğutma Odası Kiralama">Seyyar Soğutma Odası Kiralama</option>
+          <option value="Seyyar Soğutma Odası Kiralama">
+            Seyyar Soğutma Odası Kiralama
+          </option>
           <option value="Genel">Genel</option>
         </select>
       </div>
@@ -142,13 +169,17 @@ function ContactForm() {
       </div>
 
       <ReCAPTCHA
-        sitekey="6LdeU3sqAAAAAAjSzBlkL0KUUWn4oZ8_we2NKZfF" // Google reCAPTCHA'dan aldığınız site anahtarını buraya yapıştırın
+        sitekey="6LdeU3sqAAAAAAjSzBlkL0KUUWn4oZ8_we2NKZfF"
         onChange={handleRecaptchaChange}
       />
 
-      <button className="btn" type="submit">Gönder</button>
-      
-      {successMessage && <p style={{ color: "green", marginTop: "10px" }}>{successMessage}</p>}
+      <button className="btn" type="submit">
+        Gönder
+      </button>
+
+      {successMessage && (
+        <p style={{ color: "green", marginTop: "10px" }}>{successMessage}</p>
+      )}
     </form>
   );
 }
