@@ -17,6 +17,7 @@ function ContactForm() {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
 
+    // Regex doğrulaması
     if (name === "name") {
       const nameRegex = /^[a-zA-ZğüşöçıİĞÜŞÖÇ\s]+$/;
       if (!nameRegex.test(value)) {
@@ -66,17 +67,17 @@ function ContactForm() {
     }
 
     try {
-      const recaptchaResponse = await fetch("/api/verify-recaptcha", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ token: recaptchaValue }),
-      });
-
-      if (!recaptchaResponse.ok) {
-        throw new Error("reCAPTCHA doğrulama isteği başarısız.");
-      }
+      // reCAPTCHA doğrulaması için Google API çağrısı
+      const recaptchaResponse = await fetch(
+        `https://www.google.com/recaptcha/api/siteverify`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+          body: `secret=6LdeU3sqAAAAAFUhxPO83Daa9GZQMsZhMuhhdKa4&response=${recaptchaValue}`,
+        }
+      );
 
       const recaptchaResult = await recaptchaResponse.json();
 
@@ -85,6 +86,7 @@ function ContactForm() {
         return;
       }
 
+      // Eğer reCAPTCHA başarılıysa email gönder
       emailjs
         .send(
           "service_uzxp3ll",
