@@ -17,7 +17,6 @@ function ContactForm() {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
 
-    // Regex doğrulaması
     if (name === "name") {
       const nameRegex = /^[a-zA-ZğüşöçıİĞÜŞÖÇ\s]+$/;
       if (!nameRegex.test(value)) {
@@ -67,7 +66,6 @@ function ContactForm() {
     }
 
     try {
-      // Backend'e reCAPTCHA doğrulama isteği gönder
       const recaptchaResponse = await fetch("/api/verify-recaptcha", {
         method: "POST",
         headers: {
@@ -76,6 +74,10 @@ function ContactForm() {
         body: JSON.stringify({ token: recaptchaValue }),
       });
 
+      if (!recaptchaResponse.ok) {
+        throw new Error("reCAPTCHA doğrulama isteği başarısız.");
+      }
+
       const recaptchaResult = await recaptchaResponse.json();
 
       if (!recaptchaResult.success) {
@@ -83,7 +85,6 @@ function ContactForm() {
         return;
       }
 
-      // Eğer doğrulama başarılıysa email gönder
       emailjs
         .send(
           "service_uzxp3ll",
@@ -96,12 +97,7 @@ function ContactForm() {
           },
           "VNXL7YSQNVV0rZkfd"
         )
-        .then((response) => {
-          console.log(
-            "E-posta başarıyla gönderildi!",
-            response.status,
-            response.text
-          );
+        .then(() => {
           setSuccessMessage("Mesajınız başarıyla gönderildi!");
           setFormData({
             name: "",
@@ -111,8 +107,7 @@ function ContactForm() {
           });
           setRecaptchaValue(null);
         })
-        .catch((err) => {
-          console.error("E-posta gönderilirken hata oluştu:", err);
+        .catch(() => {
           alert("Mesaj gönderilirken bir hata oluştu.");
         });
     } catch (error) {
