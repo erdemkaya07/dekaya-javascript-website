@@ -53,7 +53,7 @@ function ContactForm() {
     setRecaptchaValue(value);
   };
 
-  const handleSubmit = async (e) => {
+ /*  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (!recaptchaValue) {
@@ -116,7 +116,65 @@ function ContactForm() {
       console.error("reCAPTCHA doğrulama hatası:", error);
       alert("Bir hata oluştu. Lütfen tekrar deneyin.");
     }
+  }; */
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+  
+    if (!recaptchaValue) {
+      alert("Lütfen reCAPTCHA doğrulamasını tamamlayın.");
+      return;
+    }
+  
+    try {
+      // Backend API'ye reCAPTCHA doğrulama isteği gönder
+      const recaptchaResponse = await fetch("/api/verify-recaptcha", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ token: recaptchaValue }),
+      });
+  
+      const recaptchaResult = await recaptchaResponse.json();
+  
+      if (!recaptchaResult.success) {
+        alert("reCAPTCHA doğrulaması başarısız. Lütfen tekrar deneyin.");
+        return;
+      }
+  
+      // Eğer doğrulama başarılıysa email gönder
+      emailjs
+        .send(
+          "service_uzxp3ll",
+          "template_09jv0zr",
+          {
+            name: formData.name,
+            email: formData.email,
+            option: formData.option,
+            message: formData.message,
+          },
+          "VNXL7YSQNVV0rZkfd"
+        )
+        .then(() => {
+          setSuccessMessage("Mesajınız başarıyla gönderildi!");
+          setFormData({
+            name: "",
+            email: "",
+            option: "Arıza Bildirimi",
+            message: "",
+          });
+          setRecaptchaValue(null);
+        })
+        .catch(() => {
+          alert("Mesaj gönderilirken bir hata oluştu.");
+        });
+    } catch (error) {
+      console.error("reCAPTCHA doğrulama hatası:", error);
+      alert("Bir hata oluştu. Lütfen tekrar deneyin.");
+    }
   };
+  
 
   return (
     <form onSubmit={handleSubmit}>
