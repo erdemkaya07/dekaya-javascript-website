@@ -67,7 +67,7 @@ function ContactForm() {
     }
 
     try {
-      // reCAPTCHA doğrulaması için Google API çağrısı
+      // Google reCAPTCHA doğrulama isteği
       const recaptchaResponse = await fetch(
         `https://www.google.com/recaptcha/api/siteverify`,
         {
@@ -86,7 +86,7 @@ function ContactForm() {
         return;
       }
 
-      // Eğer reCAPTCHA başarılıysa email gönder
+      // Eğer doğrulama başarılıysa email gönder
       emailjs
         .send(
           "service_uzxp3ll",
@@ -143,10 +143,12 @@ function ContactForm() {
         {errors.email && <p style={{ color: "red" }}>{errors.email}</p>}
       </div>
       <div className="contact-options">
-        <label htmlFor="option">
-          Ne Hakkında İletişim kurmak istiyorsunuz?
-        </label>
-        <select name="option" value={formData.option} onChange={handleChange}>
+        <label htmlFor="option">Ne Hakkında İletişim kurmak istiyorsunuz?</label>
+        <select
+          name="option"
+          value={formData.option}
+          onChange={handleChange}
+        >
           <option value="Arıza Bildirimi">Arıza Bildirimi</option>
           <option value="Satış">Satış</option>
           <option value="Seyyar Soğutma Odası Kiralama">
