@@ -10,7 +10,6 @@ export default async function handler(req, res) {
   const secretKey = "6LdeU3sqAAAAAFUhxPO83Daa9GZQMsZhMuhhdKa4";
 
   try {
-    // Google reCAPTCHA doğrulama isteği gönder
     const response = await axios.post(
       "https://www.google.com/recaptcha/api/siteverify",
       null,
