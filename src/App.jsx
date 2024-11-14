@@ -17,10 +17,12 @@ import ServiceDetail from "./components/Home/OurServices/ServiceDetail";
 import ScrollToTop from "./api/ScrollToTop";
 import BlogList from "./components/Blog/BlogList";
 import BlogDetail from "./components/Blog/BlogDetail";
+import StructuredData from "./StructuredData";
 
 function App() {
   return (
     <HelmetProvider>
+      <StructuredData />
       <BrowserRouter>
       <ScrollToTop />
         <NavBar />
